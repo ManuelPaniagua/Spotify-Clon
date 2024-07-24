@@ -1,0 +1,3 @@
+### defineConfig 
+to render pages in the server, instead all static pages. 
+- We have to defineConfig output in the server for this project. Because the app use a lot of albuns and songs in every page, it make sense to use a server. 
