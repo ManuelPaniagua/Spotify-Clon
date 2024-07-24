@@ -1,3 +1,10 @@
 ### defineConfig 
 to render pages in the server, instead all static pages. 
 - We have to defineConfig output in the server for this project. Because the app use a lot of albuns and songs in every page, it make sense to use a server. 
+
+###Transitions 
+- the Player.jsx is set to transition:persist, we want that the currentSong persists if we change pages
+
+
+### Global State with Zustant
+- install zustant for a global state for the currentSong
