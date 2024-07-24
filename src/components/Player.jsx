@@ -1,4 +1,5 @@
 // import { usePlayerStore } from "@/store/playerStore"
+import { usePlayerStore } from "@/store/playerStore"
 import { useEffect, useRef, useState } from "react"
 // import { Slider } from "./Slider"
 
@@ -24,8 +25,12 @@ useEffect(()=> {
 
 }, [])
 
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [currentSong, isCurrentSong] = useState(null)
+    // const [isPlaying, setIsPlaying] = useState(false)
+    const {isPlaying, setIsPlaying} = usePlayerStore(state => state)
+
+    // const [currentSong, isCurrentSong] = useState(null)
+    const {currentMusic} = usePlayerStore(state => state)
+
     const audioRef = useRef()
 
     const handleClick = () => {
