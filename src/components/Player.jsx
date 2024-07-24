@@ -26,10 +26,9 @@ useEffect(()=> {
 }, [])
 
     // const [isPlaying, setIsPlaying] = useState(false)
-    const {isPlaying, setIsPlaying} = usePlayerStore(state => state)
+    const { currentMusic, isPlaying, setIsPlaying} = usePlayerStore(state => state)
 
-    // const [currentSong, isCurrentSong] = useState(null)
-    const {currentMusic} = usePlayerStore(state => state)
+
 
     const audioRef = useRef()
 
